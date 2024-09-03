@@ -1,0 +1,133 @@
+body{
+    background-color: black ;
+}
+body, ul{
+    margin:0;
+    padding:0;
+    font-family: Handjet;
+    
+}
+
+nav{
+    border: back 5px solid;
+    padding-left: 70px;
+    background-color: aqua;
+    list-style-type: none;
+    display: flex;
+    padding-bottom: 20px;
+    justify-content: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+ul>li{
+    list-style: none;
+    display: inline-block;
+}
+a{
+    text-decoration: none;
+    color: black;
+    margin-right: 50px;
+    display: block; 
+    font-size: 40px;
+
+}
+
+a:hover{
+    color: red;
+}
+
+#main_con{
+    border:blck 5px solid;
+    height: 500px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-image: url(images/blue.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+.overlay{
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    left: 40%;
+    font-size: 40px;
+
+    
+}
+img{
+    width: 70px;
+
+}
+#startButton{
+    border-radius: 90px;
+    position: absolute;
+    top: 45%;
+    left: 48%;
+    }
+
+#stopButton{
+    border-radius: 90px;
+    position: absolute;
+    top: 45%;
+    left: 38%;
+    }
+
+#resetButton{
+  
+    border-radius: 90px;
+    position: absolute;
+    top: 45%;
+    left: 58%;
+    }
+        
+
+#timer{
+    font-size: 60px;
+    position: absolute;
+    top: 57%;
+    left: 45%;
+}
+
+#report{
+    border: cornflowerblue 5px solid;
+    height: 600px;
+    background-color: cornflowerblue;
+
+}
+.heading{
+    text-align: center;
+    font-size: 50px;
+    border-top: 2px black solid;
+    border-bottom: 2px black solid;
+
+}
+#record{
+    margin-left: auto;
+   margin-right: auto;
+   width: 700px;
+}
+td{
+    text-align: center;
+    font-weight: 700;
+    font-size: 25px
+}
+footer{
+    border: dimgray 5px solid;
+    height: 300px;
+    background-color: dimgrey;
+}
+.Entor{
+     text-align: center;
+     text-decoration: underline;
+     font-size: 40px;
+     font-weight: 700;
+     
+}
+.pipi{
+    font-size: larger;
+    font-weight: 600;
+    text-align: center;
+}

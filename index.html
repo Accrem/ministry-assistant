@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body> 
+    <script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-firestore-compat.js"></script>
+    <script>
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+        apiKey: "AIzaSyDs7r9Q5R4QHvsBK1fFhc6jcdJ1kcTS5XY",
+        authDomain: "ministry-assistant-fa77e.firebaseapp.com",
+        projectId: "ministry-assistant-fa77e",
+        storageBucket: "ministry-assistant-fa77e.appspot.com",
+        messagingSenderId: "816939732199",
+        appId: "1:816939732199:web:f120b4a0955653d6f06642",
+        measurementId: "G-8P9SH3MXEL"
+        };
+
+        const app = initializeApp(firebaseConfig);
+
+        const db = getFirestore(app);
+
+    </script>
+    <nav>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="#Report">Report</a></li>
+            <li><a href="./Pages/setting.html">Settings</a></li>
+            <li><a href="#contact_me">Contact Us</a></li>
+        </ul>
+    </nav>   
+    <div id="main_con">
+        <p class="overlay">Welcome to your Assisstant!!</p>
+        <button id="startButton"> 
+            <img src="images/button.png">
+        </button>
+        <button id="resetButton"> 
+            <img src="images/reset.PNG">
+        </button>
+        <button id="stopButton"> 
+            <img src="images/stop.png">
+        </button>
+        <div id="timer">00:00:00</div>
+
+    </div>
+    <div id="report">
+        <h2 class="heading" id="Report">REPORT!!</h2>
+        <table id="record" border="1">
+            <tr>
+                <td>HOURS</td>
+                <td>PLACEMENTS</td>
+                <td>VIDEOS</td>
+                <td>RETURN VISITS</td>
+                <td>BIBLE STUDIES</td>
+            </tr>
+            
+        </table>
+
+    </div>
+    
+    <div style="background-color: azure;">
+        <table id="savedTimesTable" border="1">
+            <thead>
+                <tr>
+                    <th>Total Time (hh:mm:ss)</th>
+                    <th>Date Saved</th>
+                </tr>
+            </thead>
+            <tbody id="savedTimesBody">
+                <!-- Saved times will appear here -->
+            </tbody>
+        </table>
+    </div>
+
+
+    <footer id="contact_me">
+        <h3 class="Entor">Contact Me</h3>
+        <p class="pipi">Phone No: +2349072179149</p>
+        <p class="pipi">Email: odosaenaruero@gmail.com</p>
+        <p class="pipi">Github: @accrem  </p>
+        <p class="pipi">Even though the website the webssite is lacking, please remember this is my first project and you also have to pay me my money.<br> I also built this in two days.</p>
+    </footer>
+    
+</body>
+</html>
